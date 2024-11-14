@@ -1,0 +1,10 @@
+name: Get-Hostname
+on: workflow_dispatch
+jobs:
+  print-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "Hello"
+      - name: Get Hostname
+        run: hostname

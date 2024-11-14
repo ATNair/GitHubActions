@@ -8,3 +8,12 @@ jobs:
         run: echo "Hello"
       - name: Get Hostname
         run: hostname
+  second-job:
+     runs-on: ubuntu-latest
+     steps:
+       - name: maultiline
+         run: |
+           echo "hello"
+           echo "again!!"
+     
+    

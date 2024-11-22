@@ -1,0 +1,19 @@
+name: Deploy Project
+on: push
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps: 
+        - name: Get Code
+          uses: actions/checkout@v4
+        - name: test1
+          run: echo "test"
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+        - name: get code
+          uses: actions/checkout@v4
+        - name: deploy1
+          run: echo "deploy" 
+
+        

@@ -9,6 +9,7 @@ jobs:
         - name: test1
           run: echo "test"
     deploy:
+        needs: test
         runs-on: ubuntu-latest
         steps:
         - name: get code

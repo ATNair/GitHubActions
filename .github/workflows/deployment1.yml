@@ -1,0 +1,8 @@
+name: deployment1
+on: push
+jobs:
+    simpleEcho: 
+        runs-on: ubuntu-latest
+        steps:
+            - name: run ls
+              run: ls
